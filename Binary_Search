@@ -33,10 +33,10 @@ int binary_search__(vector<int> &nums,int key,int left,int right){
     }
     if(issmaller(nums[mid],key)){
         left = mid;     // as mid is also a contender (we will keep it)  
-        return binary_search_(nums,key,left,right); // recursive call 
+        return binary_search__(nums,key,left,right); // recursive call 
     }else{
         right = mid - 1;    // as mid is not a contender (we will remove it)
-        return binary_search_(nums,key,left,right); // recursive call
+        return binary_search__(nums,key,left,right); // recursive call
     }
 }
 int main(){
