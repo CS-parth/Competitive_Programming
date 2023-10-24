@@ -14,4 +14,7 @@ void primefact(int num){
             cout << i << "^" << cnt << " * ";
         }
     }
+    if(num > 1){
+        cout << num << "^" << 1;
+    }
 }
