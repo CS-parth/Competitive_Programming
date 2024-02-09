@@ -18,3 +18,5 @@ void primefact(int num){
         cout << num << "^" << 1;
     }
 }
+
+// O(logn)
