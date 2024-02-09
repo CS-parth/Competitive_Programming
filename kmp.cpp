@@ -24,7 +24,7 @@ vector<int> kmpsearch(string s,string t){
                 j++;
             }
             if(j == t.size()){
-                indices.push_back(i);
+                indices.push_back(i-j);
                 j = pi[j-1];
             }else if(s[i] != t[j]){
                 if(j != 0) j = pi[j-1];
