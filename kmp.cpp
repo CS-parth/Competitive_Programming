@@ -26,7 +26,7 @@ vector<int> kmpsearch(string s,string t){
             if(j == t.size()){
                 indices.push_back(i-j);
                 j = pi[j-1];
-            }else if(s[i] != t[j]){
+            }else if(i < s.size() && s[i] != t[j]){
                 if(j != 0) j = pi[j-1];
                 else i++;
             }
@@ -34,6 +34,5 @@ vector<int> kmpsearch(string s,string t){
         return indices;
 }
 int main(){
-    // This is not everyone that should
-    
+      
 }
