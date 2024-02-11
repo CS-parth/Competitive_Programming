@@ -12,14 +12,14 @@ vector<int> prefix(string s){
     }
     return pi;
 }
-vector<int> kmpsearch(string s,string t){
+vector<int> kmp_search(string s,string t){
         vector<int> pi = prefix(t);
         vector<int> indices;
         int i = 0;
         int j = 0;
         int n = s.size();
         int m = t.size();
-        while(n-i <= m-j){
+        while(n-i >= m-j){
             if(s[i] == t[j]){
                 i++;
                 j++;
