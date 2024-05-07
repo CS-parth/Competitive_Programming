@@ -15,7 +15,7 @@
         for (int i = 0; i < S; i++)
             h[i+1] = (h[i] + (s[i]) * p_pow[i]) % m; 
         long long h_t = 0; 
-        for (int i = 0; i < S; i++) 
+        for (int i = 0; i < T; i++) 
             h_t = (h_t + (t[i]) * p_pow[i]) % m; 
 
         vector<int> occurrences;
